@@ -286,7 +286,7 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 64px 0 140px;
+  padding: 64px 0 40px;
   gap: 114px;
 }
 

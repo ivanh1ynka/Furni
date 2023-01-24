@@ -1,3 +1,5 @@
+AOS.init();
+
 // ********** Burger Mobile Menu **********
 function burgerMenu() {
   const burger = document.querySelector(".burger");
