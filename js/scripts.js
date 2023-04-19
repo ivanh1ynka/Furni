@@ -12,11 +12,18 @@ function burgerMenu() {
       body.classList.add("locked");
     } else {
       menu.classList.remove("active");
-      burger.classList.remove("active-burger");
       body.classList.remove("locked");
+      burger.classList.remove("active-burger");
     }
   });
-  // Вот тут мы ставим брейкпоинт навбара
+  const itemLink = document.querySelectorAll(".menu__item-link");
+  itemLink.forEach(function (itemLink) {
+    itemLink.addEventListener("click", () => {
+      body.classList.remove("locked");
+      menu.classList.remove("active");
+      burger.classList.remove("active-burger");
+    });
+  });
   window.addEventListener("resize", () => {
     if (window.innerWidth > 991.98) {
       menu.classList.remove("active");
@@ -42,7 +49,7 @@ function menuActive() {
   }
   addClassElementEvent(".menu__item-link", "menu__item-link-active", "click");
 }
-menuActive();
+// menuActive();
 
 // ********** Active Button **********
 function btnActive() {
@@ -61,7 +68,8 @@ function btnActive() {
   }
   addClassElementEvent(".hero__btn", "hero__btn-active", "click");
 }
-btnActive();
+// btnActive();
+
 const swiper = new Swiper('.swiper', {
 	slidesPerView: 1,
 	spaceBetween: 30,
