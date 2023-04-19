@@ -49,7 +49,7 @@ function menuActive() {
   }
   addClassElementEvent(".menu__item-link", "menu__item-link-active", "click");
 }
-// menuActive();
+menuActive();
 
 // ********** Active Button **********
 function btnActive() {
@@ -68,7 +68,7 @@ function btnActive() {
   }
   addClassElementEvent(".hero__btn", "hero__btn-active", "click");
 }
-// btnActive();
+btnActive();
 
 const swiper = new Swiper('.swiper', {
 	slidesPerView: 1,
