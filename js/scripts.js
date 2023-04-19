@@ -78,3 +78,20 @@ const swiper = new Swiper('.swiper', {
 		el: '.swiper-scrollbar',
 	},
 });
+function send() {
+  let inputName = document.querySelector(".footer__contact-name"),
+    inputMail = document.querySelector(".footer__contact-mail"),
+    btn = document.querySelector(".footer__contact-btn-link");
+
+  btn.addEventListener("click", () => {
+    let data = {
+      'name': inputName.value,
+      'mail': inputMail.value,
+    };
+    inputName.value = "";
+    inputMail.value = "";
+    console.log(data);
+  });
+}
+send();
+

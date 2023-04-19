@@ -117,9 +117,15 @@ body.locked {
 
 .header {
   background: #35736E;
+  z-index: 10;
   position: fixed;
-  z-index: 9;
+  top: 0;
+  left: 0;
   width: 100%;
+}
+
+.fixed__header {
+  background: #35736E;
 }
 
 .navbar {
@@ -1027,7 +1033,8 @@ body.locked {
   gap: 15px;
 }
 
-.footer__contact-input {
+.footer #name,
+.footer #mail {
   width: 260px;
   padding: 14px 0 14px 22px;
   border: 1px solid #cacaca;
@@ -1417,7 +1424,7 @@ body.locked {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 64px 0 80px;
+    padding: 100px 0 80px;
   }
 
   .main .about .right__item {
@@ -1446,7 +1453,7 @@ body.locked {
 
   .main .services__wrapper {
     gap: 10px;
-    padding: 55px 0 30px;
+    padding: 100px 0 30px;
   }
 
   .main .services__item-svg {
@@ -1559,7 +1566,8 @@ body.locked {
     width: 50%;
   }
 
-  .footer__contact-input {
+  .footer #name,
+  .footer #mail {
     width: 100%;
   }
 
@@ -1773,13 +1781,13 @@ body.locked {
   }
 
   .footer__wrapper {
-    padding: 50px 0 20px;
+    padding: 100px 0 20px;
   }
 
   .footer__wrapper-img {
     width: 220px;
     height: 205px;
-    top: 50px;
+    top: 100px;
     right: -10px;
   }
 
@@ -2023,7 +2031,8 @@ body.locked {
     width: 100%;
   }
 
-  .footer__contact-input {
+  .footer #name,
+  .footer #mail {
     opacity: 0.85;
   }
 
